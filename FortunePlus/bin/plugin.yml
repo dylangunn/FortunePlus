@@ -1,0 +1,25 @@
+name: FortunePlus
+version: 1.1
+author: MaddDawg555
+api-version: 1.16
+main: me.dylangunn.fortuneplus.FortunePlus
+description: >
+            Originally by DupsMckracken_. Allows Iron, Diamond, or Netherite picks enchanted with Fortune to collect multiple ore blocks. Scales properly with level.
+commands:
+    fortuneplus:
+        aliases: [fp]
+        description: Tells the user if they are able to use FortunePlus.
+        usage: /fortuneplus
+permissions:
+    fortuneplus.*:
+        description: Gives FortunePlus permissions for Iron and Gold ore.
+        default: true
+        children:
+            fortuneplus.iron_ore: true
+            fortuneplus.gold_ore: true
+    fortuneplus.iron_ore:
+        description: Gives FortunePlus permissions on Iron ore.
+        default: true
+    fortuneplus.gold_ore:
+        description: Gives FortunePlus permissions on Gold ore.
+        default: true
